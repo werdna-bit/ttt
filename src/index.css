@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+	height: 100vh;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.button {
+	position: relative;
+	overflow: hidden;
+	background: white;
+	color: black;
+	z-index: 0;
+	transition: color 0.5s ease;
+}
+
+.button::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e0e0e0;
+	transform: translateY(100%);
+	transition: transform 0.5s ease;
+	z-index: -1;
+}
+
+.button:hover::after {
+	transform: translateY(0);
+}
