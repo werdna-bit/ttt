@@ -1,9 +1,9 @@
 export default function Logo() {
 	return (
-		<div>
+		<div className="w-full max-w-[800px]">
 			<svg
-				width="1243"
-				height="388"
+				aria-hidden="true"
+				className="w-full"
 				viewBox="0 0 1243 388"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
