@@ -70,24 +70,11 @@ export default function Game() {
 				</div>
 			</div>
 			<div className="grid grid-cols-3 w-full max-w-lg relative mx-auto gap-4">
-				{Array.from({ length: 9 }, (_, i) => (
-					<button
-						type="button"
-						disabled={picks.includes(i)}
-						key={i}
-						onClick={() => handlePick(i)}
-						className={`w-full aspect-square overflow-auto border border-4 rounded-4xl relative button relative cursor-pointer ${picks.includes(i) ? "pointer-events-none" : ""}`}
-					>
-						{picks.includes(i)
-							? picks.indexOf(i) % 2 === 0
-								? "X"
-								: "O"
-							: null}
-						<span
-							className={`absolute w-[300px] ${i === winningScenario[0] ? "bg-red-400" : ""} h-6 rounded-full  w-6 left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2`}
-						></span>
-					</button>
-				))}
+				<button
+					type="button"
+					tabIndex={1}
+					className={`w-full aspect-square overflow-auto border border-4 rounded-4xl relative button relative cursor-pointer`}
+				></button>
 			</div>
 		</div>
 	);
