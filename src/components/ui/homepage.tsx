@@ -12,7 +12,7 @@ export default function HomePage({ setState }: Props) {
 			<button
 				type="button"
 				onClick={() => setState("playing")}
-				className="font-[600] px-4 p-2 text-2xl w-full max-w-[230px] rounded-lg button border border-3 shadow-[0px_4px] cursor-pointer"
+				className="font-[600] px-4 p-2 text-2xl w-full max-w-[230px] rounded-lg button2 border border-3 shadow-[0px_4px] cursor-pointer"
 			>
 				Play
 			</button>
